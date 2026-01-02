@@ -205,7 +205,7 @@ jobs:
 
       # Build signed LoopFollow IPA file
       - name: Fastlane Build & Archive
-        run: bundle exec fastlane release
+        run: bundle exec fastlane build_LoopFollow
         env:
           TEAMID: ${{ secrets.TEAMID }}
           GH_PAT: ${{ secrets.GH_PAT }}
